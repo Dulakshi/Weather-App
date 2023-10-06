@@ -1,0 +1,11 @@
+<div *ngIf="(data$ | async) as data else noData">
+  <h2>Weather in {{ data.city }}, {{ data.country }}</h2>
+  <p>Temperature: {{ data.temperature }}°C</p>
+  <p>Weather: {{ data.weather }}</p>
+</div>
+
+<ng-template #noData>
+  <div>
+    <p>Weather data not available!</p>
+  </div>
+</ng-template>

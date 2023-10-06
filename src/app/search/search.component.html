@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h2>Weather App</h2>
+  <form>
+    <div>
+      <input
+        type="text"
+        id="city"
+        placeholder="Enter city"
+        [formControl]="city"/>
+    </div>
+    <div>
+      <label>Units:</label>
+      <select id="units" [formControl]="units">
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
+    </div>
+
+    <button class="mat-button" (click)="searchWeather()">Search</button>
+  </form>
+</div>

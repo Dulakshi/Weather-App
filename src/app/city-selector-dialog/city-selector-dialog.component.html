@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Suggested Cities</h2>
+<mat-dialog-content>
+  <ul>
+    <li *ngFor="let selectedCity of selectedCities">
+      <button mat-button (click)="onCitySelected(selectedCity)">{{ selectedCity.city }}
+        , {{ selectedCity.country }}</button>
+    </li>
+  </ul>
+</mat-dialog-content>

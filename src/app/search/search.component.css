@@ -1,0 +1,15 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
